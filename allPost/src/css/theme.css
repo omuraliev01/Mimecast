@@ -1,0 +1,173 @@
+.buttons-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.buttons-container .label-container {
+  display: inline-block;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Hind,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #CF1257;
+}
+
+/*.year-dropdown {*/
+/*  -webkit-appearance: none;*/
+/*  -moz-appearance: none;*/
+/*  appearance: none;*/
+/*  border: none;*/
+/*  font-size: inherit;*/
+/*  font-weight: inherit;*/
+/*  font-family: inherit;*/
+/*  padding: 5px 20px;*/
+/*}*/
+
+.prev-button{
+  background: transparent;
+  border: none;
+  height: 25px;
+  outline: none;
+  background: url("../img/blocks/Vector (10).svg") center/cover no-repeat;
+}
+.next-button{
+  background: transparent;
+  border: none;
+  height: 25px;
+  outline: none;
+  background: url("../img/blocks/Vector (11).svg") center/cover no-repeat;
+
+}
+
+.week {
+  margin: 10px 0;
+  font-family: Hind, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+
+/*.week.highlight {*/
+/*  border-radius: 5px;*/
+/*}*/
+
+.weeks-wrapper.header {
+  /*border-bottom: 1px solid #eee;*/
+  display: none;
+}
+
+/*.week .day.header {*/
+/*  font-weight: bold;*/
+/*  text-transform: uppercase;*/
+/*  font-size: 120%;*/
+/*}*/
+
+.day span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.day.today span {
+  position: relative;
+  display: inline-block;
+  font-size: 110%;
+}
+
+/* weekend */
+/*.week .day:first-child,*/
+/*.week .day:last-child {*/
+/*  color: orange;*/
+/*}*/
+
+/* sunday */
+.week .day:first-child {
+
+  color: red;
+}
+
+/*.day.today span::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  bottom: 7px;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  border-bottom: 2px solid orange;*/
+/*  width: 10px;*/
+/*  height: 1px;*/
+/*}*/
+
+.day.sunday span {
+  color: #ff8a80;
+
+}
+
+.week .day.highlight span {
+  color: #2196f3;
+}
+
+.week .day.selected span {
+  background: #1565c0;
+  color: white;
+
+}
+
+.week .day[disabled="disabled"] span {
+  color: #aaa;
+  cursor: not-allowed;
+  display: none;
+
+}
+
+.months-wrapper .month span {
+  /*display: inline-block;*/
+  padding: 10px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.special-buttons {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  display: none;
+}
+
+.today-button {
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  position: relative;
+}
+.calendar-container{
+  margin-top: 60px;
+  margin-left: 20px;
+}
